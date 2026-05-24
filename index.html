@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namık Baydar Sofrası | Gaziantep'in En Özel Ev Yemekleri</title>
+    <meta name="description" content="Geleneksel Gaziantep ev yemeklerini modern sunum ve kaliteli hizmet anlayışıyla buluşturuyoruz. Namık Baydar Sofrası'nda premium bir deneyim yaşayın.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cinematic Background Canvas -->
+    <canvas id="bg-canvas" class="cinematic-canvas"></canvas>
+    
+    <!-- Ambient Light Leaks -->
+    <div class="ambient-light light-1"></div>
+    <div class="ambient-light light-2"></div>
+    <div class="ambient-light light-3"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo text-logo">
+                [Buraya Logonuz Gelecek]
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+                <li><a href="#menu" class="nav-link">Menü</a></li>
+                <li><a href="#reviews" class="nav-link">Yorumlar</a></li>
+                <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+                <li><a href="#contact" class="btn-primary nav-btn">Rezervasyon</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal">
+            <h1 class="hero-title">Gaziantep'in En Özel Ev Yemekleri</h1>
+            <p class="hero-subtitle">Geleneksel lezzetleri modern sunum ve kaliteli hizmet anlayışıyla buluşturuyoruz.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">Menüyü İncele</a>
+                <a href="#contact" class="btn-secondary">Rezervasyon Yap</a>
+            </div>
+            
+            <div class="stats-card glass">
+                <div class="stat">
+                    <i class="fa-solid fa-star"></i>
+                    <div>
+                        <strong>4.8 / 5</strong>
+                        <span>5732 Değerlendirme</span>
+                    </div>
+                </div>
+                <div class="stat divider"></div>
+                <div class="stat">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <strong class="text-green">Şu an Açık</strong>
+                        <span>22:00'a kadar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal fade-left">
+                    <span class="section-subtitle">Hikayemiz</span>
+                    <h2 class="section-title">Gelenekten Geleceğe Uzanan Lezzet Mirası</h2>
+                    <p>Gaziantep'in zengin mutfak kültürünü, annelerimizin tarifleriyle yaşatıyoruz. Namık Baydar Sofrası olarak amacımız, sadece yemek yemek değil, misafirlerimize unutulmaz bir deneyim sunmaktır.</p>
+                    <p>Modern mimari dokunuşlarla tasarlanmış nezih ortamımızda, ev yemeğinin sıcaklığını ve restoran kalitesinin premium hissini bir arada yaşayacaksınız.</p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <div>
+                                <h4>Taze Malzemeler</h4>
+                                <p>Günlük temin edilen en kaliteli ürünler</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-fire-burner"></i></div>
+                            <div>
+                                <h4>Geleneksel Pişirme</h4>
+                                <p>Odun ateşi ve taş fırın lezzeti</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image reveal fade-right">
+                    <!-- Placeholder for real image -->
+                    <div class="image-placeholder premium-placeholder" style="background-color: #1a1a1a;">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Lütfen Mekan Görseli Ekleyin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section-padding bg-dark">
+        <div class="container text-center reveal fade-up">
+            <span class="section-subtitle">Menümüz</span>
+            <h2 class="section-title text-light">Özenle Seçilmiş Lezzetler</h2>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-target="ana-yemekler">Ana Yemekler</button>
+                <button class="tab-btn" data-target="corbalar">Çorbalar</button>
+                <button class="tab-btn" data-target="et-tavuk">Et & Tavuk</button>
+                <button class="tab-btn" data-target="makarna-pilav">Makarna & Pilav</button>
+                <button class="tab-btn" data-target="tatlilar">Tatlılar</button>
+                <button class="tab-btn" data-target="icecekler">İçecekler</button>
+            </div>
+            
+            <div class="menu-content">
+                <!-- Ana Yemekler -->
+                <div class="menu-panel active" id="ana-yemekler">
+                    <div class="menu-grid">
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-bowl-food"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Güveç</h3><span class="price">₺327,75</span></div>
+                                <p>Etli. Günlük hazırlanır.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-bowl-food"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Orman Kebabı</h3><span class="price">₺424,75</span></div>
+                                <p>Günlük hazırlanır.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-bowl-food"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Yuvarlama</h3><span class="price">₺319,75</span></div>
+                                <p>Günlük hazırlanır.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-bowl-food"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Alinazik</h3><span class="price">₺344,75</span></div>
+                                <p>Günlük hazırlanır.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-bowl-food"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Zeytinyağlı Dolma</h3><span class="price">₺214,75</span></div>
+                                <p>Günlük hazırlanır. 🔥 Popüler</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Çorbalar -->
+                <div class="menu-panel" id="corbalar">
+                    <div class="menu-grid">
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-spoon"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Mercimek Çorbası</h3><span class="price">₺126,75</span></div>
+                                <p>Ekmek ile 🔥 Popüler</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-spoon"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Ezogelin Çorbası</h3><span class="price">₺126,75</span></div>
+                                <p>Ekmek ile 🔥 Popüler</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-spoon"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Tavuk Çorbası</h3><span class="price">₺189,75</span></div>
+                                <p>Ekmek ile</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-spoon"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Yayla Çorbası</h3><span class="price">₺172,75</span></div>
+                                <p>Ekmek ile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Et & Tavuk -->
+                <div class="menu-panel" id="et-tavuk">
+                    <div class="menu-grid">
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-fire"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Kuzu İncik</h3><span class="price">₺799,75</span></div>
+                                <p>Tek kişilik</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-fire"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>İzmir Köfte</h3><span class="price">₺459,75</span></div>
+                                <p>Tek kişilik</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-fire"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Kadınbudu Köfte</h3><span class="price">₺318,75</span></div>
+                                <p>Tek kişilik</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-fire"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Fırında Tavuk</h3><span class="price">₺359,75</span></div>
+                                <p>Günlük hazırlanır.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-fire"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Köri Soslu Tavuk</h3><span class="price">₺399,75</span></div>
+                                <p>Günlük hazırlanır.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Makarna & Pilav -->
+                <div class="menu-panel" id="makarna-pilav">
+                    <div class="menu-grid">
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-wheat-awn"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Pirinç Pilavı</h3><span class="price">₺139,75</span></div>
+                                <p>Tek kişilik 🔥 Popüler</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-wheat-awn"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>İçli Pilav</h3><span class="price">₺149,75</span></div>
+                                <p>Tek kişilik</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-wheat-awn"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Bulgur Pilavı</h3><span class="price">₺149,75</span></div>
+                                <p>Tek kişilik</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-bowl-food"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Pilav Üstü Fasulye</h3><span class="price">₺254,75</span></div>
+                                <p>Tek kişilik</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-plate-wheat"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Fırın Makarna</h3><span class="price">₺234,75</span></div>
+                                <p>Tek kişilik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tatlılar -->
+                <div class="menu-panel" id="tatlilar">
+                    <div class="menu-grid">
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-ice-cream"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Çömlekte Fırın Sütlaç</h3><span class="price">₺144,75</span></div>
+                                <p>Günlük hazırlanır.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-ice-cream"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Aşure</h3><span class="price">₺189,75</span></div>
+                                <p>Günlük hazırlanır.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-ice-cream"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Karamelli Trileçe</h3><span class="price">₺144,75</span></div>
+                                <p>Günlük hazırlanır.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-ice-cream"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Profiterol</h3><span class="price">₺142,75</span></div>
+                                <p>Tek kişilik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- İçecekler -->
+                <div class="menu-panel" id="icecekler">
+                    <div class="menu-grid">
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-glass-water"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Sarıyer Kola / Gazoz</h3><span class="price">₺70</span></div>
+                                <p>33 cl. Kutu içecek</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-glass-water"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Doğanay Limonata</h3><span class="price">₺65</span></div>
+                                <p>20 cl. Pet şişe</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-glass-water"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Eker Ayran</h3><span class="price">₺50</span></div>
+                                <p>27 cl. Büyük boy</p>
+                            </div>
+                        </div>
+                        <div class="menu-card 3d-card">
+                            <div class="menu-img-placeholder premium-placeholder">
+                                <i class="fa-solid fa-glass-water"></i><span>Görsel Eklenecek</span>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-title-row"><h3>Sade Soda</h3><span class="price">₺45</span></div>
+                                <p>20 cl. Cam şişe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="assests/Restoran_Menusu.pdf" target="_blank" class="btn-outline" style="margin-top: 3rem;">Tüm Menüyü İndir (PDF)</a>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews section-padding">
+        <div class="container">
+            <div class="reviews-header reveal fade-up">
+                <div>
+                    <span class="section-subtitle">Müşteri Yorumları</span>
+                    <h2 class="section-title">Misafirlerimiz Neler Söyledi?</h2>
+                </div>
+                <div class="google-rating glass">
+                    <div class="google-icon text-gold" style="font-size: 2rem; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-google"></i></div>
+                    <div class="rating-info">
+                        <strong>4.8</strong>
+                        <div class="stars text-gold">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span>5,732 Yorum</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews-slider reveal fade-up delay-1">
+                <div class="review-card 3d-card">
+                    <div class="reviewer">
+                        <div class="avatar">A</div>
+                        <div class="reviewer-info">
+                            <h4>Ahmet Yılmaz</h4>
+                            <span>Yerel Rehber • 24 Yorum</span>
+                        </div>
+                    </div>
+                    <div class="stars text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"Hayatımda yediğim en iyi yuvalama olabilir. Mekanın ambiyansı muazzam, çalışanlar çok ilgili. Kesinlikle tavsiye ederim."</p>
+                    <span class="review-date">2 hafta önce</span>
+                </div>
+                
+                <div class="review-card 3d-card">
+                    <div class="reviewer">
+                        <div class="avatar">M</div>
+                        <div class="reviewer-info">
+                            <h4>Merve Kaya</h4>
+                            <span>12 Yorum</span>
+                        </div>
+                    </div>
+                    <div class="stars text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"Fiyatlar sundukları kaliteye göre çok makul. Hem lüks bir akşam yemeği yiyip hem de anne yemeği lezzetini alabiliyorsunuz."</p>
+                    <span class="review-date">1 ay önce</span>
+                </div>
+                
+                <div class="review-card 3d-card">
+                    <div class="reviewer">
+                        <div class="avatar">C</div>
+                        <div class="reviewer-info">
+                            <h4>Caner Demir</h4>
+                            <span>Yerel Rehber • 45 Yorum</span>
+                        </div>
+                    </div>
+                    <div class="stars text-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"Tasarımına ve hijyenine bayıldım. Misafirlerinizi ağırlamak için mükemmel bir yer. Ali Nazik efsaneydi."</p>
+                    <span class="review-date">2 ay önce</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container text-center reveal fade-up">
+            <span class="section-subtitle">Galeri</span>
+            <h2 class="section-title">Göz Alıcı Atmosfer</h2>
+        </div>
+        <div class="gallery-grid">
+            <!-- Placeholders for actual photos -->
+            <div class="gallery-item premium-placeholder">
+                <i class="fa-solid fa-camera"></i>
+                <span>İç Mekan Görseli</span>
+            </div>
+            <div class="gallery-item premium-placeholder">
+                <i class="fa-solid fa-camera"></i>
+                <span>Yemek Görseli</span>
+            </div>
+            <div class="gallery-item premium-placeholder">
+                <i class="fa-solid fa-camera"></i>
+                <span>Yemek Görseli</span>
+            </div>
+            <div class="gallery-item premium-placeholder">
+                <i class="fa-solid fa-camera"></i>
+                <span>Dış Mekan Görseli</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="contact" class="contact section-padding bg-light">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal fade-left">
+                    <span class="section-subtitle">İletişim</span>
+                    <h2 class="section-title">Bizi Ziyaret Edin</h2>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Adres</h4>
+                                <p>Gazi Muhtar Paşa Bulvarı, No: 123<br>Şehitkamil / Gaziantep</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p>+90 (342) 123 45 67</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>E-Posta</h4>
+                                <p>info@namikbaydarsofrasi.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h4>Çalışma Saatleri</h4>
+                                <p>Her Gün: 11:00 - 22:30</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Busy Indicator -->
+                    <div class="busy-indicator glass mt-4">
+                        <div class="busy-header">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Yoğunluk Durumu</h4>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                        <p>Şu an normal yoğunlukta (Tahmini bekleme: 5-10 dk)</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper glass reveal fade-right">
+                    <h3>Rezervasyon Yapın</h3>
+                    <form id="reservation-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Telefon Numaranız" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" id="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="guests" required>
+                                <option value="" disabled selected>Kişi Sayısı</option>
+                                <option value="1">1 Kişi</option>
+                                <option value="2">2 Kişi</option>
+                                <option value="3">3 Kişi</option>
+                                <option value="4">4 Kişi</option>
+                                <option value="5">5+ Kişi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="3" placeholder="Özel İstekleriniz (Opsiyonel)"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-100">Rezervasyon Talebi Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo text-logo">[Buraya Logonuz Gelecek]</div>
+                    <p>Gaziantep'in eşsiz lezzetlerini, modern bir sunumla sofralarınıza taşıyoruz. Kalite ve gelenek bir arada.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Hızlı Menü</h4>
+                    <ul>
+                        <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#about">Hakkımızda</a></li>
+                        <li><a href="#menu">Menü</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Müşteri Hizmetleri</h4>
+                    <ul>
+                        <li><a href="#">Rezervasyon Politikası</a></li>
+                        <li><a href="#">Gizlilik Sözleşmesi</a></li>
+                        <li><a href="#">S.S.S</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Namık Baydar Sofrası. Tüm hakları saklıdır.</p>
+                <p>Designed with <i class="fa-solid fa-heart text-gold"></i> for Premium Experience</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
